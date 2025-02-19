@@ -1,0 +1,124 @@
+/* ============================================================ */
+                    /* PORTFOLIO PAGE */
+/* ============================================================ */
+
+.portfolio-section {
+    /* padding: 2rem 0; */
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background-color: var(--dark-color);
+    /* max-height: 80vh; */
+    display: flex;
+    align-items: center;
+}
+
+.carousel-container {
+    width: 100%;
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    /* padding: 0 15px; */
+}
+
+.carousel-inner {
+    background-color: var(--dark-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carousel-item {
+    padding: 2rem 0;
+}
+
+.project-card a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.project-image {
+    width: 100%;
+    /* max-width: 800px; */
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+    transform: scale(1.02);
+}
+
+.carousel-caption {
+    background-color: var(--dark-color);
+    color: var(--text-color);
+    border-radius: 8px;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 1rem;
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    opacity: 0.8;
+}
+
+.carousel-indicators {
+    bottom: 0;
+}
+
+/* @media (max-width: 992px) {
+    .project-card {
+        max-width: 700px;
+    }
+    
+    .project-image {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-section {
+        padding: 1rem 0;
+    }
+
+    .project-card {
+        max-width: 500px;
+    }
+    
+    .project-image {
+        max-width: 400px;
+    } */
+
+
+/* @media (max-width: 576px) {
+    .project-card {
+        max-width: 100%;
+    }
+    
+    .project-image {
+        max-width: 100%;
+    }
+
+    .carousel-item {
+        padding: 1rem 0;
+    }
+} */
+
