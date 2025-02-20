@@ -26,22 +26,10 @@ body {
     background-color: var(--light-bg);
 }
 
-/* footer{
-    background: var(--dark-color);
-    color: var(--text-light);
-    position: fixed;
-    bottom: 0; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0.1rem;
-
-} */
 
 footer {
     position: fixed;
-    bottom: 0;
+    bottom: -60px;
     left: 0;
     right: 0;
     background-color: var(--footer-bg);

@@ -1,22 +1,20 @@
 /* ============================================================ */
                     /* PORTFOLIO PAGE */
 /* ============================================================ */
+body {
+background-color: var(--dark-color);
+}
 
 .portfolio-section {
-    /* padding: 2rem 0; */
     margin-bottom: 0;
     padding-bottom: 0;
     background-color: var(--dark-color);
-    /* max-height: 80vh; */
     display: flex;
     align-items: center;
 }
 
 .carousel-container {
     width: 100%;
-    /* max-width: 1200px; */
-    /* margin: 0 auto; */
-    /* padding: 0 15px; */
 }
 
 .carousel-inner {
@@ -34,7 +32,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 90%;
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -83,42 +81,3 @@
 .carousel-indicators {
     bottom: 0;
 }
-
-/* @media (max-width: 992px) {
-    .project-card {
-        max-width: 700px;
-    }
-    
-    .project-image {
-        max-width: 600px;
-    }
-}
-
-@media (max-width: 768px) {
-    .portfolio-section {
-        padding: 1rem 0;
-    }
-
-    .project-card {
-        max-width: 500px;
-    }
-    
-    .project-image {
-        max-width: 400px;
-    } */
-
-
-/* @media (max-width: 576px) {
-    .project-card {
-        max-width: 100%;
-    }
-    
-    .project-image {
-        max-width: 100%;
-    }
-
-    .carousel-item {
-        padding: 1rem 0;
-    }
-} */
-

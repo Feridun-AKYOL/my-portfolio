@@ -4,18 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact me</title>
+    <title>Contact Me</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <!-- Animate.css -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../CSS/contact.css">
+    <script src="../index.js" defer></script>
 </head>
 
 <body>
@@ -27,78 +25,41 @@
                         class="d-inline-block align-text-top">
                     Feridun Akyol
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link " href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./education.html">Education</a>
-                    </li>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./skills.html">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./education.html">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page"
+                            href="./contact.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    <!-- Contact Section -->
+
     <main class="container bg-light">
         <h2 class="text-center m-5 animate__animated animate__fadeInUp">Contact Me</h2>
         <div class="row">
-            <!-- Contact Information -->
             <div class="col-lg-4 mb-4 animate__animated animate__fadeInLeft">
                 <div class="card h-100">
                     <div class="card-body">
                         <h3 class="h5 mb-4">Get in Touch</h3>
-                        <div class="d-flex mb-3">
-                            <i class="fas fa-map-marker-alt fa-2x text-primary me-3"></i>
-                            <div>
-                                <h4 class="h6 mb-1">Location</h4>
-                                <p class="mb-0">Limburg, Belgium</p>
-                            </div>
-                        </div>
-                        <div class="d-flex mb-3">
-                            <i class="fas fa-envelope fa-2x text-primary me-3"></i>
-                            <div>
-                                <h4 class="h6 mb-1">Email</h4>
-                                <a href="mailto:feridunakyol34@gmailcom"
-                                    class="text-decoration-none">feridunakyol34@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="d-flex mb-3">
-                            <i class="fas fa-phone fa-2x text-primary me-3"></i>
-                            <div>
-                                <h4 class="h6 mb-1">Phone</h4>
-                                <a href="tel:+32612345678" class="text-decoration-none">+32 6 1234 5678</a>
-                            </div>
-                        </div>
-                        <div class="d-flex mb-3">
-                            <i class="fab fa-linkedin fa-2x text-primary me-3"></i>
-                            <div>
-                                <h4 class="h6 mb-1">LinkedIn</h4>
-                                <a href="https://linkedin.com/in/feridun-akyol" target="_blank"
-                                    class="text-decoration-none">linkedin.com/in/feridun-akyol</a>
-                            </div>
-                        </div>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> Limburg, Belgium</p>
+                        <p><i class="fas fa-envelope me-2"></i> <a
+                                href="mailto:feridunakyol34@gmail.com">feridunakyol34@gmail.com</a></p>
+                        <p><i class="fas fa-phone me-2"></i> <a href="tel:+32612345678">+32 6 1234 5678</a></p>
+                        <p><i class="fab fa-linkedin me-2"></i> <a href="https://linkedin.com/in/feridun-akyol"
+                                target="_blank">linkedin.com/in/feridun-akyol</a></p>
                     </div>
                 </div>
             </div>
-            <!-- Contact Form -->
-            <div class="col-lg-8 wow animate__animated animate__fadeInRight">
+            <div class="col-lg-8 animate__animated animate__fadeInRight">
                 <div class="card">
                     <div class="card-body">
                         <form id="contactForm" onsubmit="return handleSubmit(event)">
@@ -120,77 +81,36 @@
                                 <label for="message" class="form-label">Message</label>
                                 <textarea class="form-control" id="message" rows="5" required></textarea>
                             </div>
-                            <div class="mb-3">
-                                <button type="submit" class="btn btn-primary">
-                                    Send Message
-                                    <i class="fas fa-paper-plane ms-2"></i>
-                                </button>
-                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message <i
+                                    class="fas fa-paper-plane ms-2"></i></button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer class="container-fluid">
+
+    <footer class="container-fluid text-center py-3">
         <p>&copy; 2025 Feridun Akyol</p>
     </footer>
-    <div class="toast-notification" id="toastNotification">
-        <i class="fas fa-check-circle"></i>
-        <span>Message sent successfully!</span>
-    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script>
         function handleSubmit(event) {
             event.preventDefault();
-            // Get form data
-            const formData = {
-                name: document.getElementById('name').value,
-                email: document.getElementById('email').value,
-                subject: document.getElementById('subject').value,
-                message: document.getElementById('message').value
-            };
-            alert('Thank you for your message! I will get back to you soon.');
-            // Reset form
-            event.target.reset();
-            return false;
-        }
-        function handleSubmit(event) {
-            event.preventDefault();
-            // Show loading state
             const submitBtn = event.target.querySelector('button[type="submit"]');
             const originalText = submitBtn.innerHTML;
-            submitBtn.innerHTML = '<span class="loading-spinner"></span> Sending...';
+            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm"></span> Sending...';
             submitBtn.disabled = true;
-            // Simulate form submission (replace with actual API call)
+
             setTimeout(() => {
-                // Reset button
                 submitBtn.innerHTML = originalText;
                 submitBtn.disabled = false;
-                // Show success notification
-                const toast = document.getElementById('toastNotification');
-                toast.classList.add('show');
-                setTimeout(() => {
-                    toast.classList.remove('show');
-                }, 3000);
-                // Reset form
+                alert('Thank you for your message! I will get back to you soon.');
                 event.target.reset();
             }, 1500);
-            return false;
         }
-        // Add input animation handlers
-        document.querySelectorAll('.contact-form .form-control').forEach(input => {
-            input.addEventListener('focus', function () {
-                this.parentElement.classList.add('focused');
-            });
-            input.addEventListener('blur', function () {
-                if (!this.value) {
-                    this.parentElement.classList.remove('focused');
-                }
-            });
-        });
     </script>
 </body>
 
