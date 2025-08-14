@@ -1,0 +1,30 @@
+body { background-color: var(--dark-color); }
+
+.portfolio-section { margin-bottom: 0; padding-bottom: 0; background-color: var(--dark-color); display: flex; align-items: center; }
+.carousel-container { width: 100%; }
+.carousel-inner { background-color: var(--dark-color); border-radius: 10px; overflow: hidden; }
+.carousel-item { padding: 2rem 0; }
+.project-card a { display:flex; flex-direction: column; align-items:center; justify-content:center; max-width:80%; margin:0 auto; }
+.project-image { width: 100%; height: auto; object-fit: contain; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); transition: transform .3s ease; }
+.project-image:hover { transform: scale(1.02); }
+.carousel-caption { background-color: var(--dark-color); color: var(--text-color); border-radius: 8px; padding: 1rem; position: relative; bottom: 0; left: 0; right: 0; margin-top: 1rem; }
+.carousel-control-prev, .carousel-control-next { width: 5%; opacity: .8; }
+.carousel-indicators { bottom: 0; }
+
+.portfolio-section { padding: 2rem 1rem; background-color: #e5e7eb; }
+.project-container { display: none; flex-direction: column; gap: 2rem; max-width: 1200px; margin: 0 auto; padding: 1rem; }
+.project-item { border-radius: 8px; overflow: hidden; transition: transform .3s ease; }
+.project-item:hover { transform: translateY(-5px); }
+.project-item:nth-child(1) { background: linear-gradient(135deg, #1a2a6c, #2a3a7c); box-shadow: 0 4px 15px rgba(122,143,230,.3); }
+.project-item:nth-child(2) { background: linear-gradient(135deg, #2c3e50, #3498db); box-shadow: 0 4px 15px rgba(44,62,80,.3); }
+.project-item:nth-child(3) { background: linear-gradient(135deg, #16222a, #3a6073); box-shadow: 0 4px 15px rgba(22,34,42,.3); }
+.project-item a { color: inherit; }
+.project-item img { width: 100%; height: auto; object-fit: cover; border-bottom: 1px solid rgba(255,255,255,.1); }
+.project-content { padding: 1.5rem; color: white; }
+.project-content h5 { margin: 0 0 .5rem 0; font-size: 1.25rem; font-weight: 600; color: #fff; }
+.project-content p { margin: 0; opacity: .9; line-height: 1.6; color: rgba(255,255,255,.9); }
+
+@media (max-width: 576px) {
+  .carousel-container { display: none; }
+  .project-container { display: flex; }
+}

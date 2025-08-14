@@ -1,0 +1,32 @@
+.navbar { background-color: var(--primary-color) !important; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+.navbar-brand { font-weight: 600; color: white !important; }
+.nav-link { color: rgba(255,255,255,0.8) !important; transition: color 0.3s ease; }
+.nav-link:hover { color: white !important; }
+.nav-link.active { color: var(--accent-color) !important; }
+
+main { padding: 3rem 0; }
+
+h1 { color: var(--primary-color); margin-bottom: 3rem; font-weight: 700; position: relative; }
+h1::after { content: ''; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 100px; height: 3px; background-color: var(--accent-color); }
+
+.skill-card { background: white; border-radius: 15px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform .3s ease, box-shadow .3s ease; }
+.skill-card:hover { transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
+.skill-card h3 { color: var(--secondary-color); margin-bottom: 1.5rem; font-weight: 600; display: flex; align-items: center; }
+.skill-card h3 i { margin-right: 10px; color: var(--accent-color); }
+
+.skill-list { list-style: none; padding: 0; }
+.skill-list li { margin-bottom: 1rem; padding-left: 1.5rem; position: relative; }
+.skill-list li::before { content: '▹'; position: absolute; left: 0; color: var(--accent-color); }
+
+.progress-wrapper { margin-bottom: 1rem; }
+.progress { height: 8px; background-color: #e9ecef; border-radius: 4px; overflow: hidden; }
+.progress-bar { background-color: var(--accent-color); transition: width 1.5s ease-in-out; }
+.skill-level { font-size: .9rem; color: var(--secondary-color); margin-bottom: .5rem; }
+
+.other-skills { background: white; border-radius: 15px; padding: 2rem; margin-top: 2rem; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+.other-skills h3 { color: var(--secondary-color); margin-bottom: 1rem; }
+.other-skills p { color: var(--text-color); line-height: 1.6; }
+
+footer { background-color: var(--primary-color); color: white; padding: 1rem 0; text-align: center; margin-top: 3rem; }
+
+@media (max-width: 768px) { .skill-card { margin-bottom: 1.5rem; } }

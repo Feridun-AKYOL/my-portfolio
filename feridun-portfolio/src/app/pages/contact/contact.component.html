@@ -1,0 +1,46 @@
+<main class="container bg-light">
+  <h2 class="text-center m-5 animate__animated animate__fadeInUp">Contact Me</h2>
+  <div class="row">
+    <div class="col-lg-4 mb-4 animate__animated animate__fadeInLeft">
+      <div class="card contact-card h-100">
+        <div class="card-body">
+          <h3 class="h5 mb-4">Get in Touch</h3>
+          <p><i class="fas fa-map-marker-alt me-2"></i> Limburg, Belgium</p>
+          <p><i class="fas fa-envelope me-2"></i> <a href="mailto:feridunakyol34@gmail.com">feridunakyol34@gmail.com</a></p>
+          <p><i class="fas fa-phone me-2"></i> <a href="tel:+32612345678">+32 6 1234 5678</a></p>
+          <p><i class="fab fa-linkedin me-2"></i> <a href="https://linkedin.com/in/feridun-akyol" target="_blank">linkedin.com/in/feridun-akyol</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-8 animate__animated animate__fadeInRight">
+      <div class="card contact-card">
+        <div class="card-body">
+          <form (ngSubmit)="submit()" #contactForm="ngForm" class="contact-form">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" name="name" [(ngModel)]="form.name" required />
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" name="email" [(ngModel)]="form.email" required />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subject" name="subject" [(ngModel)]="form.subject" required />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="5" [(ngModel)]="form.message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" [disabled]="isSubmitting">
+              <span *ngIf="isSubmitting" class="spinner-border spinner-border-sm me-2"></span>
+              Send Message <i class="fas fa-paper-plane ms-2"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
